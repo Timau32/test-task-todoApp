@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(router);
 app.use(errorHandler);
 
-const start = async () => {
+export const start = async () => {
   try {
     await connectDb();
 
